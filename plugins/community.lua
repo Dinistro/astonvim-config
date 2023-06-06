@@ -6,4 +6,11 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  "p00f/clangd_extensions.nvim", -- install lsp plugin
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = { "clangd" }, -- automatically install lsp
+    },
+  },
 }
